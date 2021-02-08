@@ -1,0 +1,10 @@
+.basic-grid { 
+    display: grid;
+    gap: 1rem;
+    /* v1 - 12 cols */
+    grid-template-columns: repeat(12, 1fr);
+    /* v2 - 12 cols with minmax */
+    grid-template-columns: repeat(12, minmax(240px, 1fr));
+    /* v3 - fits n cols to screen size with overflow given minmax dims */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
